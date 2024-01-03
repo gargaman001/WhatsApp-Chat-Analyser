@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+  <head>
+    <title>index</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+    <div class="first">
+      
+      <div class="jumbotron">
+        <h3>Welcome to</h3>  
+        <h1 class="display-4">ChatCharter</h1>
+        <p class="lead">ChatCharter is single-page Web App that visualises your WhatsApp chats and gives you insights like who sent the most texts, media and much more</p>
+      </div>
+
+      <div class="container instructions">
+        <div class="custom-file mb-3">
+          <label for="file" class="custom-file-label">Choose file to upload</label>
+          <input type="file" class="custom-file-input" accept=".txt" name="file" id="file">
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 align-items-center">
+              <p><img src="./imgs/Step1.jpeg"></p>
+            </div>
+            <div class="col-sm-4 align-items-center">
+              <p><img src="./imgs/Step2.jpeg"></p>
+            </div>
+            <div class="col-sm-4 align-items-center">
+              <p><img src="./imgs/Step3.jpeg"></p>
+              <h2 style="text-align: center; padding-top: 20px;">Save your file in Drive or E-mail and upload it here!
+              </h2>
+              <br>
+              <h4 style="text-align: center; padding-top: 20px;">Wait for a few seconds for the charts to load</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-file mb-3">
+          <label for="file" class="custom-file-label">Choose file to upload</label>
+          <input type="file" class="custom-file-input" accept=".txt" name="file" id="file">
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="container second" style="display: none; text-align: center;">
+
+      <button class="btn btn-primary" onclick="showFirstPage()">Let's Chart another file?</button>
+      
+      <a href="https://github.com/ManjunathNayak2k/WhatsApp-Chat-Analyser"
+      class="btn btn-dark" 
+      role="button"
+      style="background-color: rgba(0,0,0,1);">
+      View Code
+      <img src="./imgs/icon.png" style="height: 20px; width: 20px;">
+      </a>
+
+      <br>
+      <hr>
+
+      <div class="col">
+        <h3>MESSAGES SENT</h3>
+        <canvas id="msgChart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <hr>
+
+      <div class="col">
+        <h3>WORDS SENT</h3>
+        <canvas id="wordChart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <hr>
+
+      <div class="col">
+        <h3>MEDIA SENT</h3>
+        <canvas id="mediaChart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <hr>
+
+      <div class="col">
+        <h3>TOP 10 MOST USED WORDS</h3>
+        <canvas id="top10Chart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <hr>
+
+      <div class="col">
+        <h3>MESSAGES DELETED</h3>
+        <canvas id="delMsgChart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <hr>
+
+      <div class="col">
+        <h3>AVERAGE MESSAGE LENGTH</h3>
+        <canvas id="msgLenChart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <hr>
+
+      <div class="col">
+        <h3>PEAK TIME</h3>
+        <canvas id="timeChart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <hr>
+
+      <div class="col">
+        <h3>PEAK DATE</h3>
+        <canvas id="dateChart"></canvas>
+      </div>
+      <br>
+      <button class="btn btn-primary go-to-top" onclick="scrollToTop()"> 
+        Click to scroll to top 
+      </button> 
+      <br>
+      <hr>
+
+      <button class="btn btn-primary" onclick="showFirstPage()">Let's Chart another file?</button>
+      <a href="https://github.com/ManjunathNayak2k/WhatsApp-Chat-Analyser"
+      class="btn btn-dark" 
+      role="button">
+      View Code</a>
+
+      <hr>
+
+    </div>
+
+    <footer class="page-footer font-small blue pt-4">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://github.com/ManjunathNayak2k">  Manjunath Nayak</a>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="jQuery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="./scripts/graphScript.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/index.js"></script>
+
+  </body>
+</html>

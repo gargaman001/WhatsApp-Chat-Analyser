@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(252, 223, 252);
+}
+
+h1 {
+	font-family: 'Berkshire Swash', cursive;
+}
+
+h3 {
+    padding-top: 4%;
+    text-align: center;
+}
+
+.jumbotron {
+	text-align: center;
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	background-image: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+
+.instructions {
+	padding-top: 20px;
+}
+
+img {
+	padding-bottom: 5px;
+	max-height: 700px;
+	max-width: 340px;
+}
