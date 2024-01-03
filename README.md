@@ -2,7 +2,7 @@
 
 A single-page completely front-end WebApp to analyse your WhatsApp chats and display relevant stats as graphs.  
 
-[Deployed](https://github.com/gargaman001/WhatsApp-Chat-Analyser/) on GitHub pages.  
+[Deployed](https://gargaman001.github.io/WhatsApp-Chat-Analyser/) on GitHub pages.  
 
 Uses [ChartJS](https://www.chartjs.org/) for the graphs.  
 
